@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fasting Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>20/4 Fasting Tracker</h1>
+    
+    <div>
+      <label for="startTime">Eating Starts At:</label>
+      <input type="time" id="startTime" value="18:00">
+    </div>
+
+    <div>
+      <label for="endTime">Eating Ends At:</label>
+      <input type="time" id="endTime" value="22:00">
+    </div>
+
+    <button onclick="updateStatus()">Update</button>
+
+    <div id="status" class="status-box">
+      Checking status...
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
